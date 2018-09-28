@@ -1,0 +1,24 @@
+{
+  "name": "stringdottrym",
+  "version": "1.0.0",
+  "description": "🥔",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "scripts": {
+    "test": "./node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/madsroskar/stringdottrym"
+  },
+  "keywords": [
+    "string",
+    "dot",
+    "trym"
+  ],
+  "author": "madshvero@gmail.com",
+  "license": "UNLICENSED"
+}
