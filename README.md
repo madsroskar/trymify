@@ -17,4 +17,7 @@ Trymification is the act of replacing _EVERYTHING_ with potatoes.
 
     console.log("Hello, world!".trym());
     // Output: 🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔
+
+    console.log("Hello, world!".trym("roasted"));
+    // Output: 🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠
 ```
