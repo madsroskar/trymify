@@ -24,9 +24,9 @@ test('Allows roasted sweet potato', function() {
 test.each`
     case                     | input            | length
     ${'emoji'}               | ${'🥔🍠🎉🎁🎊'} | ${5}
-    ${'math'}                | ${'𝐁∆[】℃'}      | ${6}
+    ${'math'}                | ${'𝐁∆[】℃'}      | ${5}
     ${'letter-like'}         | ${'ℳ'}          | ${1}
-    ${'non-English letters'} | ${'咊ñ'}         | ${2};
+    ${'non-English letters'} | ${'咊ñ'}         | ${2}
     ${'misc'}                | ${'✎¶'}          | ${2}
 `('supports $case characters ("$input" has $length characters)', function({ input, length }) {
     expect(input.trym()).toBe('🥔'.repeat(length));
