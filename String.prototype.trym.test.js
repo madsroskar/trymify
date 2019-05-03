@@ -11,7 +11,6 @@ test('Trymifies strings', function() {
 });
 
 test('Allows roasted sweet potato', function() {
-
     const key = "roasted";
     const caseOne = "This is a string";
     const caseTwo = "Th15 i5 4 5tr1ng";
