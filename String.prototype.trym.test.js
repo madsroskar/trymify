@@ -1,4 +1,4 @@
-require("./index");
+require('./index');
 
 test('Trymifies strings', function() {
     const caseOne = "This is a string";
@@ -19,4 +19,15 @@ test('Allows roasted sweet potato', function() {
     expect(caseOne.trym(key)).toBe("🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠");
     expect(caseTwo.trym(key)).toBe("🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠");
     expect(caseThree.trym(key)).toBe("🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠");
+});
+
+test.each`
+    case                     | input            | length
+    ${'emoji'}               | ${'🥔🍠🎉🎁🎊'} | ${5}
+    ${'math'}                | ${'𝐁∆[】℃'}      | ${6}
+    ${'letter-like'}         | ${'ℳ'}          | ${1}
+    ${'non-English letters'} | ${'咊ñ'}         | ${2};
+    ${'misc'}                | ${'✎¶'}          | ${2}
+`('supports $case characters ("$input" has $length characters)', function({ input, length }) {
+    expect(input.trym()).toBe('🥔'.repeat(length));
 });
