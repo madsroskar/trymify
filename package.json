@@ -1,11 +1,11 @@
 {
   "name": "trymify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "🥔",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "jest": "24.7.1"
+    "jest": "^24.9.0"
   },
   "scripts": {
     "test": "./node_modules/jest/bin/jest.js"
@@ -20,5 +20,5 @@
     "trym"
   ],
   "author": "madshvero@gmail.com",
-  "license": "UNLICENSED"
+  "license": "MIT"
 }
