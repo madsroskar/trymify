@@ -10,6 +10,6 @@ if (!String.prototype.trym) {
     }
 
     String.prototype.trym = function(type = "normal") {
-       return this.replace(new RegExp(".", "gm"), getPotato(type))
+       return getPotato(type).repeat([...this].length);
     }
 }
