@@ -1,1 +1,1 @@
-require("./String.prototype.trym")
+require('./String.prototype.trym');

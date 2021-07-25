@@ -5,11 +5,14 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "jest": "^27.0.6"
+    "jest": "^27.0.6",
+    "semistandard": "^16.0.1"
   },
   "scripts": {
-    "test": "./node_modules/jest/bin/jest.js"
+    "fix": "semistandard --fix",
+    "test": "semistandard && ./node_modules/jest/bin/jest.js"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "github.com/madsroskar/trymify"

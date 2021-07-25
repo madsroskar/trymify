@@ -7,6 +7,9 @@
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
+  <a href="https://github.com/standard/semistandard" target="_blank">
+    <img alt="Semistandard code style" src="https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg" />
+  </a>
 </p>
 
 > Potatoes > text. Clearly.
