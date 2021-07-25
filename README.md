@@ -1,23 +1,42 @@
-# Trymify
+<h1 align="center">Trymify</h1>
+<p align="center">🥔🥔🥔🥔🥔🥔🥔</p>
+<p>
+  <a href="https://www.npmjs.com/package/trymify" target="_blank">
+    <img alt="Version" src="https://img.shields.io/npm/v/trymify.svg">
+  </a>
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
 
-This _extremely_ **useful** package trym-ifies a string. 
+> Potatoes > text. Clearly.
 
-Trymification is the act of replacing _EVERYTHING_ with potatoes.
+### 🏠 [Homepage](https://trymify.com)
 
 ## Install
 
+```sh
+yarn install
 ```
-    $ npm install trymify
+
+## Run tests
+
+```sh
+yarn test
 ```
 
 ## Usage
 
-```
-    require("trymify");
+```javascript
+require("trymify");
 
-    console.log("Hello, world!".trym());
-    // Output: 🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔
+const result = "Hello, world!".trym();
+const roastedResult = "Hello, world!".trym();
 
-    console.log("Hello, world!".trym("roasted"));
-    // Output: 🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠
+console.log({ result, roastedResult });
+// Output: {}
 ```
+
+---
+
+[![NPM](https://nodei.co/npm/trymify.png)](https://nodei.co/npm/trymify/)
