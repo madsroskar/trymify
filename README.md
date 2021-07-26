@@ -1,5 +1,7 @@
-<h1 align="center">Trymify</h1>
-<p align="center">🥔🥔🥔🥔🥔🥔🥔</p>
+<header>
+  <h1 align="center">Trymify</h1>
+  <p align="center">🥔🥔🥔🥔🥔🥔🥔</p>
+</header>
 <p>
   <a href="https://www.npmjs.com/package/trymify" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/trymify.svg">
