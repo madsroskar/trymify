@@ -5,7 +5,12 @@
 html {
   filter: invert(1) hue-rotate(180deg);
 }
-img,
+body,
+#content {
+  text-shadow: none;
+  background: #e7e7e7;
+  background-image: none;
+}
 a,
 .highlighter-rouge {
   filter: invert(1) hue-rotate(180deg);
