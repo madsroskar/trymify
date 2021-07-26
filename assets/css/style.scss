@@ -1,0 +1,12 @@
+---
+---
+
+@import "{{ site.theme }}";
+html {
+  filter: invert(1) hue-rotate(180deg);
+}
+img,
+a,
+.highlighter-rouge {
+  filter: invert(1) hue-rotate(180deg);
+}
