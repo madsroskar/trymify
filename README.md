@@ -36,10 +36,15 @@ yarn test
 require("trymify");
 
 const result = "Hello, world!".trym();
-const roastedResult = "Hello, world!".trym();
+const roastedResult = "Hello, world!".trym('roasted');
+const friesResult = "Hello, world!".trym('fries');
 
 console.log({ result, roastedResult });
-// Output: {}
+// Output: {
+//  result: "🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔",
+//  roastedResult: "🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠",
+//  friesResult: "🍟🍟🍟🍟🍟🍟🍟🍟🍟🍟🍟🍟🍟"
+// }
 ```
 
 ---

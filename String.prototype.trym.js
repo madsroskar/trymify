@@ -4,6 +4,8 @@ if (!String.prototype.trym) {
     switch (type) {
       case 'roasted':
         return '🍠';
+      case 'fries':
+        return '🍟';
       default:
         return '🥔';
     }

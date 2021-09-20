@@ -2,24 +2,15 @@
 require('./index');
 
 test('Trymifies strings', function () {
-  const caseOne = 'This is a string';
-  const caseTwo = 'Th15 i5 4 5tr1ng';
-  const caseThree = 'T!h!i!s! !i!s! !a! !s!t!r!i!n!g';
-
-  expect(caseOne.trym()).toBe('🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔');
-  expect(caseTwo.trym()).toBe('🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔');
-  expect(caseThree.trym()).toBe('🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔');
+  expect('This is a string'.trym()).toBe('🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔🥔');
 });
 
 test('Allows roasted sweet potato', function () {
-  const key = 'roasted';
-  const caseOne = 'This is a string';
-  const caseTwo = 'Th15 i5 4 5tr1ng';
-  const caseThree = 'T!h!i!s! !i!s! !a! !s!t!r!i!n!g';
+  expect('This is a string'.trym('roasted')).toBe('🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠');
+});
 
-  expect(caseOne.trym(key)).toBe('🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠');
-  expect(caseTwo.trym(key)).toBe('🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠');
-  expect(caseThree.trym(key)).toBe('🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠🍠');
+test('Allows fries', function () {
+  expect('This is a string'.trym('fries')).toBe('🍟🍟🍟🍟🍟🍟🍟🍟🍟🍟🍟🍟🍟🍟🍟🍟');
 });
 
 test.each`
